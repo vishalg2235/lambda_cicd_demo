@@ -15,6 +15,7 @@ jobs:
 
       - name: dumy
         run: |
-          echo ${{toJson(github.event)}}
+          echo "Statrtiv"
+          echo ${{ toJson(github.event) }}
           echo "________________________________\n ________ \n _______________"
           echo ${{toJson(github)}}
