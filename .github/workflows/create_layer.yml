@@ -15,7 +15,6 @@ jobs:
 
       - name: dumy
         run: |
-          echo ${github.event.description}
           echo $github.event.description
           echo ${{github.event.description}}
           echo $github.event.action
