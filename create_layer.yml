@@ -1,0 +1,12 @@
+Resources:
+  DemoRole:
+    Type: AWS::Lambda::LayerVersion
+    Properties:
+      CompatibleRuntimes: 
+        - Node.js 14
+        - Node.js 12
+      Content:
+        S3Bucket: my-bucket-us-west-2-123456789012
+        S3Key: layer.zip
+      Description: Demolayer from cloudformation
+      LayerName: DemoLayer

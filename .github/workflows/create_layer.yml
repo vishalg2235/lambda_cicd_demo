@@ -1,0 +1,18 @@
+name: Lambda Layers Management
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - layers/**
+
+jobs:
+  Check layer state:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: dumy
+        run: |
+          echo "${{ github.event.action }}"
