@@ -15,4 +15,4 @@ jobs:
 
       - name: dumy
         run: |
-          echo "${{ github.event.action }}"
+          echo "${{ github.event.description }}"
