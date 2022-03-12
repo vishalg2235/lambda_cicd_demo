@@ -7,7 +7,7 @@ on:
       - layers/**
 
 jobs:
-  Check layer state:
+  check_layer_state:
     runs-on: ubuntu-latest
 
     steps:
